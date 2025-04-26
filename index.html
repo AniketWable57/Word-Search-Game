@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Search Puzzle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Word Search</h1>
+    <div class="controls">
+      <button id="new-game">New Puzzle</button>
+      <select id="puzzle-select">
+        <option value="0">Tech Terms</option>
+        <option value="1">Animals</option>
+        <option value="2">Countries</option>
+      </select>
+      <span id="timer">Time: 0s</span>
+    </div>
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+      <span id="progress-text">0%</span>
+    </div>
+    <div id="word-grid"></div>
+    <div class="word-list">
+      <h3>Words to Find:</h3>
+      <ul id="words"></ul>
+    </div>
+    <button id="submit-btn">Submit Score</button>
+    <div id="score-display"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
